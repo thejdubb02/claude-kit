@@ -1,0 +1,3 @@
+[submodule "vendor/web-asset-generator"]
+	path = vendor/web-asset-generator
+	url = https://github.com/alonw0/web-asset-generator.git

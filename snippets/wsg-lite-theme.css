@@ -1,0 +1,35 @@
+/* WSG-lite theme tokens — shared across WSG portal, tools, client projects.
+   Drop into a <style> tag or @import. Supports light/dark via [data-theme].
+   Fonts: DM Sans (body) + Wix Madefor Display (headings).
+*/
+:root {
+  --bg:#0B0F1A; --surface:#131825; --surface-hover:#1A2133;
+  --border:#1E2A3D; --border-light:#2A3750;
+  --text:#E8ECF4; --text-2:#7B8BA5; --text-3:#4A5874;
+  --accent:#3B82F6; --accent-hover:#2563EB; --accent-muted:rgba(59,130,246,0.12);
+  --success:#22C55E; --success-muted:rgba(34,197,94,0.12);
+  --warning:#F59E0B; --warning-muted:rgba(245,158,11,0.12);
+  --danger:#EF4444; --danger-muted:rgba(239,68,68,0.12);
+  --topbar-bg:#000;
+  --shadow:0 2px 8px rgba(0,0,0,0.4);
+  --shadow-card:0 1px 0 rgba(0,0,0,0.2);
+}
+:root[data-theme="light"] {
+  --bg:#F7F9FC; --surface:#FFFFFF; --surface-hover:#F1F4F8;
+  --border:#E1E5EB; --border-light:#CBD3DC;
+  --text:#0F1729; --text-2:#52617A; --text-3:#8595AA;
+  --accent:#2563EB; --accent-hover:#1D4ED8; --accent-muted:rgba(37,99,235,0.10);
+  --success:#15803D; --success-muted:rgba(21,128,61,0.10);
+  --warning:#B45309; --warning-muted:rgba(180,83,9,0.10);
+  --danger:#B91C1C; --danger-muted:rgba(185,28,28,0.10);
+  --topbar-bg:#0F1729;
+  --shadow:0 1px 3px rgba(15,23,41,0.10);
+  --shadow-card:0 1px 2px rgba(15,23,41,0.06);
+}
+
+/* Brand colors (WSG primary palette — separate from UI tokens) */
+:root {
+  --brand-bronze:#C7915B;
+  --brand-bronze-dark:#83542E;
+  --brand-cream:#F5EBE3;
+}

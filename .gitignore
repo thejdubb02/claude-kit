@@ -3,4 +3,38 @@ __pycache__/
 .DS_Store
 .env
 .env.*
+*.env
 !.env.example
+!*.env.example
+
+# === Secrets & backups — never commit (added for claude-config bundle) ===
+# Backups often hold un-redacted snapshots of files that were later cleaned
+*.bak
+*.bak-*
+*~
+
+# The plaintext credential reference file — pull these from Bitwarden instead
+credentials.md
+**/credentials.md
+
+# The memory folder is a live secret store — NEVER commit it. Transfer machine-to-machine.
+claude-config/memory/
+**/projects/*/memory/
+
+# Files whose names indicate secrets
+*.pem
+*.key
+*.p12
+*.pfx
+*.pkcs12
+id_rsa*
+id_ed25519*
+*.ppk
+*.token
+*token.pickle
+*.bw_session
+.bw_session
+*secret*
+*secrets*
+*credential*
+*credentials*

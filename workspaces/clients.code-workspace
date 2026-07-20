@@ -1,0 +1,33 @@
+﻿{
+    "folders":  [
+                    {
+                        "path":  "../clients/wsg-client-projects",
+                        "name":  "wsg-client-projects"
+                    }
+                ],
+    "settings":  {
+                     "peacock.color":  "#0F6E6E",
+                     "workbench.colorCustomizations":  {
+                                                           "activityBar.background":  "#0F6E6E",
+                                                           "activityBar.foreground":  "#e7e7e7",
+                                                           "activityBar.inactiveForeground":  "#e7e7e799",
+                                                           "activityBarBadge.background":  "#e7e7e7",
+                                                           "activityBarBadge.foreground":  "#0F6E6E",
+                                                           "statusBar.background":  "#0F6E6E",
+                                                           "statusBar.foreground":  "#e7e7e7",
+                                                           "titleBar.activeBackground":  "#0F6E6E",
+                                                           "titleBar.activeForeground":  "#e7e7e7",
+                                                           "titleBar.inactiveBackground":  "#0F6E6E99",
+                                                           "titleBar.inactiveForeground":  "#e7e7e799"
+                                                       },
+                     "window.title":  "CLIENTS: ${activeEditorShort}",
+                     "files.watcherExclude":  {
+                                                  "**/node_modules/**":  true,
+                                                  "**/venv/**":  true,
+                                                  "**/.venv/**":  true,
+                                                  "**/dist/**":  true,
+                                                  "**/data/**":  true,
+                                                  "**/.git/**":  true
+                                              }
+                 }
+}

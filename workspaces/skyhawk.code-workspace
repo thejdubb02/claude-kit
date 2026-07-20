@@ -1,0 +1,33 @@
+﻿{
+    "folders":  [
+                    {
+                        "path":  "../skyhawk",
+                        "name":  "skyhawk (empty)"
+                    }
+                ],
+    "settings":  {
+                     "peacock.color":  "#B02A2A",
+                     "workbench.colorCustomizations":  {
+                                                           "activityBar.background":  "#B02A2A",
+                                                           "activityBar.foreground":  "#e7e7e7",
+                                                           "activityBar.inactiveForeground":  "#e7e7e799",
+                                                           "activityBarBadge.background":  "#e7e7e7",
+                                                           "activityBarBadge.foreground":  "#B02A2A",
+                                                           "statusBar.background":  "#B02A2A",
+                                                           "statusBar.foreground":  "#e7e7e7",
+                                                           "titleBar.activeBackground":  "#B02A2A",
+                                                           "titleBar.activeForeground":  "#e7e7e7",
+                                                           "titleBar.inactiveBackground":  "#B02A2A99",
+                                                           "titleBar.inactiveForeground":  "#e7e7e799"
+                                                       },
+                     "window.title":  "SKYHAWK: ${activeEditorShort}",
+                     "files.watcherExclude":  {
+                                                  "**/node_modules/**":  true,
+                                                  "**/venv/**":  true,
+                                                  "**/.venv/**":  true,
+                                                  "**/dist/**":  true,
+                                                  "**/data/**":  true,
+                                                  "**/.git/**":  true
+                                              }
+                 }
+}

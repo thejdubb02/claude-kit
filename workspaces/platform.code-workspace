@@ -1,0 +1,137 @@
+﻿{
+    "folders":  [
+                    {
+                        "path":  "../platform/agent-infra",
+                        "name":  "agent-infra"
+                    },
+                    {
+                        "path":  "../platform/claude-kit",
+                        "name":  "claude-kit"
+                    },
+                    {
+                        "path":  "../platform/guarddog",
+                        "name":  "guarddog"
+                    },
+                    {
+                        "path":  "../platform/meridian",
+                        "name":  "meridian"
+                    },
+                    {
+                        "path":  "../platform/meridian-mcp",
+                        "name":  "meridian-mcp"
+                    },
+                    {
+                        "path":  "../platform/openpx",
+                        "name":  "openpx"
+                    },
+                    {
+                        "path":  "../platform/Professor",
+                        "name":  "Professor"
+                    },
+                    {
+                        "path":  "../platform/proteus",
+                        "name":  "proteus"
+                    },
+                    {
+                        "path":  "../platform/prowler",
+                        "name":  "prowler"
+                    },
+                    {
+                        "path":  "../platform/refinery",
+                        "name":  "refinery"
+                    },
+                    {
+                        "path":  "../platform/reservoir",
+                        "name":  "reservoir"
+                    },
+                    {
+                        "path":  "../platform/sam",
+                        "name":  "sam"
+                    },
+                    {
+                        "path":  "../platform/tinyauth-sso",
+                        "name":  "tinyauth-sso"
+                    },
+                    {
+                        "path":  "../platform/wsg-agents",
+                        "name":  "wsg-agents"
+                    },
+                    {
+                        "path":  "../platform/wsg-cc-sam",
+                        "name":  "wsg-cc-sam"
+                    },
+                    {
+                        "path":  "../platform/wsg-client-template",
+                        "name":  "wsg-client-template"
+                    },
+                    {
+                        "path":  "../platform/wsg-com-site",
+                        "name":  "wsg-com-site"
+                    },
+                    {
+                        "path":  "../platform/wsg-consent",
+                        "name":  "wsg-consent"
+                    },
+                    {
+                        "path":  "../platform/wsg-infra-audit",
+                        "name":  "wsg-infra-audit"
+                    },
+                    {
+                        "path":  "../platform/wsg-lite",
+                        "name":  "wsg-lite"
+                    },
+                    {
+                        "path":  "../platform/wsg-mattermost",
+                        "name":  "wsg-mattermost"
+                    },
+                    {
+                        "path":  "../platform/wsg-meridian",
+                        "name":  "wsg-meridian"
+                    },
+                    {
+                        "path":  "../platform/wsg-platform",
+                        "name":  "wsg-platform"
+                    },
+                    {
+                        "path":  "../platform/wsg-sentinel",
+                        "name":  "wsg-sentinel"
+                    },
+                    {
+                        "path":  "../platform/wsg-seo",
+                        "name":  "wsg-seo"
+                    },
+                    {
+                        "path":  "../platform/wsg-sp-plugin",
+                        "name":  "wsg-sp-plugin"
+                    },
+                    {
+                        "path":  "../platform/wsg-tool-radar",
+                        "name":  "wsg-tool-radar"
+                    }
+                ],
+    "settings":  {
+                     "peacock.color":  "#1857A4",
+                     "workbench.colorCustomizations":  {
+                                                           "activityBar.background":  "#1857A4",
+                                                           "activityBar.foreground":  "#e7e7e7",
+                                                           "activityBar.inactiveForeground":  "#e7e7e799",
+                                                           "activityBarBadge.background":  "#e7e7e7",
+                                                           "activityBarBadge.foreground":  "#1857A4",
+                                                           "statusBar.background":  "#1857A4",
+                                                           "statusBar.foreground":  "#e7e7e7",
+                                                           "titleBar.activeBackground":  "#1857A4",
+                                                           "titleBar.activeForeground":  "#e7e7e7",
+                                                           "titleBar.inactiveBackground":  "#1857A499",
+                                                           "titleBar.inactiveForeground":  "#e7e7e799"
+                                                       },
+                     "window.title":  "PLATFORM: ${activeEditorShort}",
+                     "files.watcherExclude":  {
+                                                  "**/node_modules/**":  true,
+                                                  "**/venv/**":  true,
+                                                  "**/.venv/**":  true,
+                                                  "**/dist/**":  true,
+                                                  "**/data/**":  true,
+                                                  "**/.git/**":  true
+                                              }
+                 }
+}

@@ -375,6 +375,48 @@ Not in this repo, they hold tokens.
 
 ---
 
+## Phase 11. Repos and workspaces
+
+Buckets live at `~\dev\<bucket>`: `platform`, `ventures`, `personal`, `clients`, `unsorted`,
+plus `mark` and `skyhawk` which are isolated and populated in a separate session.
+
+Bucket assignments come from **`ESTATE.md` in the `wsg-platform` repo**, which is the source of
+truth. Anything not listed there goes to `unsorted` rather than being guessed at.
+
+> **Gotcha: the GitHub MCP connector only sees public repos.** It reports 2. There are 68.
+> Use `gh repo list thejdubb02 --limit 200` if `gh` is installed. Otherwise pull the token from
+> Git Credential Manager and call the API directly:
+>
+> ```bash
+> TOKEN=$(printf 'protocol=https\nhost=github.com\n\n' | git credential fill | sed -n 's/^password=//p')
+> ```
+>
+> Pass it to curl through a config file rather than `-H` on the command line, since argv is
+> visible to other processes. Delete that config file immediately afterwards, and never write
+> the token into a note, doc, or committed file.
+
+> **Gotcha: `wsg-client-projects` will not check out cleanly on Windows.** It needs a cone mode
+> sparse checkout. See the entry in `SETUP-HANDOFF.md` and Appendix A below for why non-cone
+> sparse checkout cannot work here.
+
+Then deploy the workspaces:
+
+```powershell
+mkdir -Force "$HOME\dev\workspaces"
+Copy-Item "$HOME\dev\platform\claude-kit\workspaces\*.code-workspace" "$HOME\dev\workspaces\"
+```
+
+Or regenerate them from what is actually on disk, which is preferable after any clone or move:
+
+```powershell
+& "$HOME\dev\platform\claude-kit\claude-config\scripts\make-workspaces.ps1"
+```
+
+The relative paths inside assume the files sit at `~\dev\workspaces\`. See
+`workspaces/README.md`.
+
+---
+
 ## Appendix A. Windows shell traps
 
 Hit while automating the setup. They cost real debugging time.

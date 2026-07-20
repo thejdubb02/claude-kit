@@ -65,15 +65,41 @@ See `SETUP-NEW-MACHINE.md` for the full runbook. Still outstanding on that machi
 
 ---
 
-## Repo coverage gap
+## Repo coverage
 
-The work PC was populated from what VPS1 actually had checked out, which is 15 repos. Memory
-(`project_sam_oversight_agent.md`) says the `thejdubb02` account has roughly 57. The GitHub API
-returns only the 2 public ones, so the private list could not be enumerated to place the
-remainder into buckets.
+Resolved 2026-07-20. The account has **68 repos**, 66 private and 2 public.
 
-If a repo is missing from a bucket on a new machine, that is why. The `unsorted/` bucket exists
-for anything that does not have an obvious home.
+The GitHub MCP connector only ever returned the 2 public ones, which is why an earlier pass
+undercounted. `gh` is not installed on the work PC, so the full list came from the REST API
+using the token out of Git Credential Manager, passed to curl through a config file so it never
+appeared in argv. That config file was overwritten and deleted immediately afterwards. **Do not
+write that token into any file, note, or commit.**
+
+Bucket assignments come from `ESTATE.md` in the `wsg-platform` repo. Note that ESTATE.md lists
+**services**, not repos, so only 24 of the 68 matched by name. `/root/HANDOFF.md` on VPS1
+contains no bucket assignments at all despite being 408 lines.
+
+Placed on the work PC: platform 27, ventures 11, personal 11, clients 1, unsorted 13.
+
+**Deliberately absent:**
+
+| Repo | Why |
+|---|---|
+| `adams-glass`, `jonny-sanchez`, `mistah-seamless-gutters` | Described as Skyhawk partnership work. Not in ESTATE.md, excluded to honour the isolation rule. |
+| `partners` | ESTATE.md assigns it to the `skyhawk` bucket. |
+| `spice-strategy` | ESTATE.md assigns it to `decommission`. |
+| `sam-sms`, `wsg-tiktok` | Exist only on VPS1 with no git remote. Cannot be cloned, only copied. |
+
+**Still in `unsorted/` (13),** with no assignment found in ESTATE.md or the VPS1 workspace
+files. Not guessed at, waiting to be sorted: `b-oss-partnership`, `cinder`,
+`creator-discovery`, `dealophant-church-affiliate`, `event-roster`, `itsjustin-site`,
+`justin-tools`, `letta-tools`, `realm-of-the-arcs`, `tasks`, `thejdubb02`, `trackio`,
+`webdesign-inbox-agent`.
+
+**Folder name that differs from its repo name:** `personal/tax-dash` is the repo
+`thejdubb02/quartermaster`. VPS1 uses `/root/tax-dash` and `project_quartermaster_tax.md`
+documents that path, so the work PC matches. This was inferred from VPS1 and memory, **not**
+verified against the home PC, which is not reachable for filesystem inspection.
 
 ---
 

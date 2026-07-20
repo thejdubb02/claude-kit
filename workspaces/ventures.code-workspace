@@ -1,0 +1,73 @@
+﻿{
+    "folders":  [
+                    {
+                        "path":  "../ventures/battlespace-daily",
+                        "name":  "battlespace-daily"
+                    },
+                    {
+                        "path":  "../ventures/commquest-inbox-agent",
+                        "name":  "commquest-inbox-agent"
+                    },
+                    {
+                        "path":  "../ventures/daily-deck",
+                        "name":  "daily-deck"
+                    },
+                    {
+                        "path":  "../ventures/daily-show-kit",
+                        "name":  "daily-show-kit"
+                    },
+                    {
+                        "path":  "../ventures/dealophant",
+                        "name":  "dealophant"
+                    },
+                    {
+                        "path":  "../ventures/my-glp-shot",
+                        "name":  "my-glp-shot"
+                    },
+                    {
+                        "path":  "../ventures/open-scoring-mma-podcast",
+                        "name":  "open-scoring-mma-podcast"
+                    },
+                    {
+                        "path":  "../ventures/open-scoring-mma-tracker",
+                        "name":  "open-scoring-mma-tracker"
+                    },
+                    {
+                        "path":  "../ventures/peplab",
+                        "name":  "peplab"
+                    },
+                    {
+                        "path":  "../ventures/relay",
+                        "name":  "relay"
+                    },
+                    {
+                        "path":  "../ventures/swaypi",
+                        "name":  "swaypi"
+                    }
+                ],
+    "settings":  {
+                     "peacock.color":  "#157A3F",
+                     "workbench.colorCustomizations":  {
+                                                           "activityBar.background":  "#157A3F",
+                                                           "activityBar.foreground":  "#e7e7e7",
+                                                           "activityBar.inactiveForeground":  "#e7e7e799",
+                                                           "activityBarBadge.background":  "#e7e7e7",
+                                                           "activityBarBadge.foreground":  "#157A3F",
+                                                           "statusBar.background":  "#157A3F",
+                                                           "statusBar.foreground":  "#e7e7e7",
+                                                           "titleBar.activeBackground":  "#157A3F",
+                                                           "titleBar.activeForeground":  "#e7e7e7",
+                                                           "titleBar.inactiveBackground":  "#157A3F99",
+                                                           "titleBar.inactiveForeground":  "#e7e7e799"
+                                                       },
+                     "window.title":  "VENTURES: ${activeEditorShort}",
+                     "files.watcherExclude":  {
+                                                  "**/node_modules/**":  true,
+                                                  "**/venv/**":  true,
+                                                  "**/.venv/**":  true,
+                                                  "**/dist/**":  true,
+                                                  "**/data/**":  true,
+                                                  "**/.git/**":  true
+                                              }
+                 }
+}

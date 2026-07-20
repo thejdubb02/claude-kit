@@ -1,0 +1,81 @@
+﻿{
+    "folders":  [
+                    {
+                        "path":  "../unsorted/b-oss-partnership",
+                        "name":  "b-oss-partnership"
+                    },
+                    {
+                        "path":  "../unsorted/cinder",
+                        "name":  "cinder"
+                    },
+                    {
+                        "path":  "../unsorted/creator-discovery",
+                        "name":  "creator-discovery"
+                    },
+                    {
+                        "path":  "../unsorted/dealophant-church-affiliate",
+                        "name":  "dealophant-church-affiliate"
+                    },
+                    {
+                        "path":  "../unsorted/event-roster",
+                        "name":  "event-roster"
+                    },
+                    {
+                        "path":  "../unsorted/itsjustin-site",
+                        "name":  "itsjustin-site"
+                    },
+                    {
+                        "path":  "../unsorted/justin-tools",
+                        "name":  "justin-tools"
+                    },
+                    {
+                        "path":  "../unsorted/letta-tools",
+                        "name":  "letta-tools"
+                    },
+                    {
+                        "path":  "../unsorted/realm-of-the-arcs",
+                        "name":  "realm-of-the-arcs"
+                    },
+                    {
+                        "path":  "../unsorted/tasks",
+                        "name":  "tasks"
+                    },
+                    {
+                        "path":  "../unsorted/thejdubb02",
+                        "name":  "thejdubb02"
+                    },
+                    {
+                        "path":  "../unsorted/trackio",
+                        "name":  "trackio"
+                    },
+                    {
+                        "path":  "../unsorted/webdesign-inbox-agent",
+                        "name":  "webdesign-inbox-agent"
+                    }
+                ],
+    "settings":  {
+                     "peacock.color":  "#4A5568",
+                     "workbench.colorCustomizations":  {
+                                                           "activityBar.background":  "#4A5568",
+                                                           "activityBar.foreground":  "#e7e7e7",
+                                                           "activityBar.inactiveForeground":  "#e7e7e799",
+                                                           "activityBarBadge.background":  "#e7e7e7",
+                                                           "activityBarBadge.foreground":  "#4A5568",
+                                                           "statusBar.background":  "#4A5568",
+                                                           "statusBar.foreground":  "#e7e7e7",
+                                                           "titleBar.activeBackground":  "#4A5568",
+                                                           "titleBar.activeForeground":  "#e7e7e7",
+                                                           "titleBar.inactiveBackground":  "#4A556899",
+                                                           "titleBar.inactiveForeground":  "#e7e7e799"
+                                                       },
+                     "window.title":  "UNSORTED: ${activeEditorShort}",
+                     "files.watcherExclude":  {
+                                                  "**/node_modules/**":  true,
+                                                  "**/venv/**":  true,
+                                                  "**/.venv/**":  true,
+                                                  "**/dist/**":  true,
+                                                  "**/data/**":  true,
+                                                  "**/.git/**":  true
+                                              }
+                 }
+}

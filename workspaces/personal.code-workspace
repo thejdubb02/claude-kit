@@ -1,0 +1,73 @@
+﻿{
+    "folders":  [
+                    {
+                        "path":  "../personal/DubbLearning",
+                        "name":  "DubbLearning"
+                    },
+                    {
+                        "path":  "../personal/field-season",
+                        "name":  "field-season"
+                    },
+                    {
+                        "path":  "../personal/hearth",
+                        "name":  "hearth"
+                    },
+                    {
+                        "path":  "../personal/justin-jobs",
+                        "name":  "justin-jobs"
+                    },
+                    {
+                        "path":  "../personal/meeting-notes",
+                        "name":  "meeting-notes"
+                    },
+                    {
+                        "path":  "../personal/prep107",
+                        "name":  "prep107"
+                    },
+                    {
+                        "path":  "../personal/shadows-of-asirad",
+                        "name":  "shadows-of-asirad"
+                    },
+                    {
+                        "path":  "../personal/sports-tracker",
+                        "name":  "sports-tracker"
+                    },
+                    {
+                        "path":  "../personal/tax-dash",
+                        "name":  "tax-dash"
+                    },
+                    {
+                        "path":  "../personal/whatbox-media-stack",
+                        "name":  "whatbox-media-stack"
+                    },
+                    {
+                        "path":  "../personal/willdo",
+                        "name":  "willdo"
+                    }
+                ],
+    "settings":  {
+                     "peacock.color":  "#6C3FA4",
+                     "workbench.colorCustomizations":  {
+                                                           "activityBar.background":  "#6C3FA4",
+                                                           "activityBar.foreground":  "#e7e7e7",
+                                                           "activityBar.inactiveForeground":  "#e7e7e799",
+                                                           "activityBarBadge.background":  "#e7e7e7",
+                                                           "activityBarBadge.foreground":  "#6C3FA4",
+                                                           "statusBar.background":  "#6C3FA4",
+                                                           "statusBar.foreground":  "#e7e7e7",
+                                                           "titleBar.activeBackground":  "#6C3FA4",
+                                                           "titleBar.activeForeground":  "#e7e7e7",
+                                                           "titleBar.inactiveBackground":  "#6C3FA499",
+                                                           "titleBar.inactiveForeground":  "#e7e7e799"
+                                                       },
+                     "window.title":  "PERSONAL: ${activeEditorShort}",
+                     "files.watcherExclude":  {
+                                                  "**/node_modules/**":  true,
+                                                  "**/venv/**":  true,
+                                                  "**/.venv/**":  true,
+                                                  "**/dist/**":  true,
+                                                  "**/data/**":  true,
+                                                  "**/.git/**":  true
+                                              }
+                 }
+}

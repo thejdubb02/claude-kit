@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# claude-kit installer — symlinks kit items into ~/.claude/
+# claude-kit installer: symlinks kit items into ~/.claude/
 # Idempotent. Safe to re-run.
 
 set -euo pipefail
@@ -35,7 +35,7 @@ echo "Installing claude-kit from $KIT_DIR into $CLAUDE_DIR"
 # Custom-built skills
 link_items "$KIT_CONFIG/skills" "$CLAUDE_DIR/skills"
 
-# Vendored third-party skills (submodules often nest SKILL.md one level deep — resolve)
+# Vendored third-party skills (submodules often nest SKILL.md one level deep, so resolve)
 if [ -d "$KIT_DIR/vendor" ]; then
     mkdir -p "$CLAUDE_DIR/skills"
     for vendor in "$KIT_DIR/vendor"/*; do

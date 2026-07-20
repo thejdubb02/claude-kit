@@ -6,6 +6,69 @@ Last updated 2026-07-20, after the work PC setup.
 
 ---
 
+## TASK: one deliberate git-history rewrite pass
+
+**Raised 2026-07-20. Scoped session, not casual. Do not start this incidentally.**
+
+Two separate problems share one solution, so do them in a single planned pass rather than
+twice. Both are history-level: the working trees are already clean.
+
+### What needs rewriting
+
+**1. Client references pruned from `claude-kit` (done in the working tree, still in history).**
+
+Commits `f5cb9b8` and `d157dfd` removed 12 allowlist entries from
+`claude-config/settings.json`. They are gone from `HEAD` but fully recoverable from history and
+from any existing clone:
+
+| What | Detail |
+|---|---|
+| Third-party PII | A real person's display name and email address, passed to an `occ user:add` one-off. The most sensitive item here. |
+| Partner infrastructure identifier | 5 entries. Behind the same isolation boundary as the `mark` and `skyhawk` buckets. |
+| Partner client identifier | 5 entries, including a token filename. |
+| A named WSG client | 2 entries with paths into that client's site directory. |
+
+The exact strings are deliberately not written out here, because this file lives in the same
+repo that seeds every machine, which is the problem being fixed. Read them from the two commits
+named above: `git show f5cb9b8` and `git show d157dfd`. The rewrite session will be working
+through history regardless.
+
+**2. `mark/` and `skyhawk/` inside `wsg-client-projects`.** See the investigation section below.
+If the answer there is that they should not be in that repo, removing them from `HEAD` is not
+enough either, for the same reason. Their full history stays reachable in the objects, which is
+exactly what the current sparse checkout does not solve.
+
+### Why this needs planning
+
+`git filter-repo` plus a force push **invalidates every existing clone**. Both machines need a
+re-sync afterwards, and any clone that is not re-synced can push the old history straight back.
+Concretely:
+
+- Every commit SHA after the rewrite point changes. Anything referencing a SHA breaks, including
+  notes in `ESTATE.md`, memory files, and the two commit hashes named above.
+- The work PC and the home PC both need a fresh clone or a hard reset onto the rewritten history.
+  A stale clone is not a passive risk, it is an active one.
+- For `wsg-client-projects`, everything with a deploy key or CI against it needs checking first.
+  Memory `project_skybox7_mark.md` documents per-repo ed25519 deploy keys.
+- GitHub keeps unreachable objects accessible by SHA for a while after a force push. If the PII
+  is the driver, the rewrite alone is not sufficient. It needs GitHub support contacted to purge
+  the cached refs, or the repo recreated.
+
+### Suggested order when the session happens
+
+1. Decide the `wsg-client-projects` question first. It changes whether that repo is even in scope.
+2. Inventory every clone of both repos across both machines and both VPS boxes.
+3. Take a full mirror backup of each repo before touching anything.
+4. Run `filter-repo` on a fresh mirror clone, never on a working clone.
+5. Verify the target strings are gone from all refs, not just `main`.
+6. Force push, then immediately re-sync every clone identified in step 2.
+7. Rotate anything that was exposed, on the assumption the old history was already fetched.
+
+Item 7 matters most for the PII, which cannot be rotated. Consider whether that alone justifies
+the disruption, or whether it is better handled by contacting GitHub.
+
+---
+
 ## INVESTIGATE: why does `wsg-client-projects` contain `mark/` and `skyhawk/` history?
 
 **Raised 2026-07-20. Do not act on this yet, investigate first.**

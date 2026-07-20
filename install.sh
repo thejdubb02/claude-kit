@@ -5,6 +5,8 @@
 set -euo pipefail
 
 KIT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+# Skills, commands and hooks live under claude-config/; vendor/ sits at the kit root.
+KIT_CONFIG="$KIT_DIR/claude-config"
 CLAUDE_DIR="${CLAUDE_DIR:-$HOME/.claude}"
 
 link_items() {
@@ -31,7 +33,7 @@ link_items() {
 echo "Installing claude-kit from $KIT_DIR into $CLAUDE_DIR"
 
 # Custom-built skills
-link_items "$KIT_DIR/skills" "$CLAUDE_DIR/skills"
+link_items "$KIT_CONFIG/skills" "$CLAUDE_DIR/skills"
 
 # Vendored third-party skills (submodules often nest SKILL.md one level deep — resolve)
 if [ -d "$KIT_DIR/vendor" ]; then
@@ -61,8 +63,8 @@ if [ -d "$KIT_DIR/vendor" ]; then
 fi
 
 # Commands, agents, hooks
-link_items "$KIT_DIR/commands" "$CLAUDE_DIR/commands"
-link_items "$KIT_DIR/agents" "$CLAUDE_DIR/agents"
-link_items "$KIT_DIR/hooks" "$CLAUDE_DIR/hooks"
+link_items "$KIT_CONFIG/commands" "$CLAUDE_DIR/commands"
+link_items "$KIT_CONFIG/agents" "$CLAUDE_DIR/agents"
+link_items "$KIT_CONFIG/hooks" "$CLAUDE_DIR/hooks"
 
 echo "Done."

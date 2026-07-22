@@ -1,81 +1,111 @@
-﻿{
-    "folders":  [
-                    {
-                        "path":  "../unsorted/b-oss-partnership",
-                        "name":  "b-oss-partnership"
-                    },
-                    {
-                        "path":  "../unsorted/cinder",
-                        "name":  "cinder"
-                    },
-                    {
-                        "path":  "../unsorted/creator-discovery",
-                        "name":  "creator-discovery"
-                    },
-                    {
-                        "path":  "../unsorted/dealophant-church-affiliate",
-                        "name":  "dealophant-church-affiliate"
-                    },
-                    {
-                        "path":  "../unsorted/event-roster",
-                        "name":  "event-roster"
-                    },
-                    {
-                        "path":  "../unsorted/itsjustin-site",
-                        "name":  "itsjustin-site"
-                    },
-                    {
-                        "path":  "../unsorted/justin-tools",
-                        "name":  "justin-tools"
-                    },
-                    {
-                        "path":  "../unsorted/letta-tools",
-                        "name":  "letta-tools"
-                    },
-                    {
-                        "path":  "../unsorted/realm-of-the-arcs",
-                        "name":  "realm-of-the-arcs"
-                    },
-                    {
-                        "path":  "../unsorted/tasks",
-                        "name":  "tasks"
-                    },
-                    {
-                        "path":  "../unsorted/thejdubb02",
-                        "name":  "thejdubb02"
-                    },
-                    {
-                        "path":  "../unsorted/trackio",
-                        "name":  "trackio"
-                    },
-                    {
-                        "path":  "../unsorted/webdesign-inbox-agent",
-                        "name":  "webdesign-inbox-agent"
-                    }
-                ],
-    "settings":  {
-                     "peacock.color":  "#4A5568",
-                     "workbench.colorCustomizations":  {
-                                                           "activityBar.background":  "#4A5568",
-                                                           "activityBar.foreground":  "#e7e7e7",
-                                                           "activityBar.inactiveForeground":  "#e7e7e799",
-                                                           "activityBarBadge.background":  "#e7e7e7",
-                                                           "activityBarBadge.foreground":  "#4A5568",
-                                                           "statusBar.background":  "#4A5568",
-                                                           "statusBar.foreground":  "#e7e7e7",
-                                                           "titleBar.activeBackground":  "#4A5568",
-                                                           "titleBar.activeForeground":  "#e7e7e7",
-                                                           "titleBar.inactiveBackground":  "#4A556899",
-                                                           "titleBar.inactiveForeground":  "#e7e7e799"
-                                                       },
-                     "window.title":  "UNSORTED: ${activeEditorShort}",
-                     "files.watcherExclude":  {
-                                                  "**/node_modules/**":  true,
-                                                  "**/venv/**":  true,
-                                                  "**/.venv/**":  true,
-                                                  "**/dist/**":  true,
-                                                  "**/data/**":  true,
-                                                  "**/.git/**":  true
-                                              }
-                 }
+{
+  "folders": [
+    {
+      "path": "/root/ventures/b-oss-partnership",
+      "name": "b-oss-partnership"
+    },
+    {
+      "path": "/root/ventures/cinder",
+      "name": "cinder"
+    },
+    {
+      "path": "/root/platform/creator-discovery",
+      "name": "creator-discovery"
+    },
+    {
+      "path": "/root/ventures/dealophant-church-affiliate",
+      "name": "dealophant-church-affiliate"
+    },
+    {
+      "path": "/root/platform/event-roster",
+      "name": "event-roster"
+    },
+    {
+      "path": "/root/personal/itsjustin-site",
+      "name": "itsjustin-site"
+    },
+    {
+      "path": "/root/platform/justin-tools",
+      "name": "justin-tools"
+    },
+    {
+      "path": "/root/platform/letta-tools",
+      "name": "letta-tools"
+    },
+    {
+      "path": "/root/personal/realm-of-the-arcs",
+      "name": "realm-of-the-arcs"
+    },
+    {
+      "path": "/root/personal/tasks",
+      "name": "tasks"
+    },
+    {
+      "path": "/root/personal/thejdubb02",
+      "name": "thejdubb02"
+    },
+    {
+      "path": "/root/platform/trackio",
+      "name": "trackio"
+    },
+    {
+      "path": "/root/platform/webdesign-inbox-agent",
+      "name": "webdesign-inbox-agent"
+    }
+  ],
+  "settings": {
+    "peacock.color": "#4A5568",
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#5f6d86",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#4b353d",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "statusBar.background": "#4a5568",
+      "statusBar.foreground": "#e7e7e7",
+      "titleBar.activeBackground": "#4a5568",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#4a556899",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "activityBar.activeBackground": "#5f6d86",
+      "activityBarTop.activeBackground": "#5f6d86",
+      "activityBarTop.background": "#5f6d86",
+      "activityBarTop.foreground": "#e7e7e7",
+      "activityBarTop.inactiveForeground": "#e7e7e799",
+      "commandCenter.border": "#e7e7e799",
+      "commandCenter.foreground": "#e7e7e7",
+      "sash.hoverBorder": "#5f6d86",
+      "statusBar.debuggingBackground": "#4a5568",
+      "statusBar.debuggingForeground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#5f6d86",
+      "statusBarItem.remoteBackground": "#a27d8a",
+      "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "window.title": "UNSORTED: ${activeEditorShort}",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/venv/**": true,
+      "**/.venv/**": true,
+      "**/dist/**": true,
+      "**/data/**": true,
+      "**/.git/**": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "\ud83d\udd10 Stash a secret",
+        "detail": "Open the secret inbox to paste a key/login. Claude files it to Bitwarden.",
+        "type": "shell",
+        "command": "stash",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "never",
+          "panel": "shared",
+          "close": true
+        }
+      }
+    ]
+  }
 }

@@ -1,73 +1,95 @@
-﻿{
-    "folders":  [
-                    {
-                        "path":  "../personal/DubbLearning",
-                        "name":  "DubbLearning"
-                    },
-                    {
-                        "path":  "../personal/field-season",
-                        "name":  "field-season"
-                    },
-                    {
-                        "path":  "../personal/hearth",
-                        "name":  "hearth"
-                    },
-                    {
-                        "path":  "../personal/justin-jobs",
-                        "name":  "justin-jobs"
-                    },
-                    {
-                        "path":  "../personal/meeting-notes",
-                        "name":  "meeting-notes"
-                    },
-                    {
-                        "path":  "../personal/prep107",
-                        "name":  "prep107"
-                    },
-                    {
-                        "path":  "../personal/shadows-of-asirad",
-                        "name":  "shadows-of-asirad"
-                    },
-                    {
-                        "path":  "../personal/sports-tracker",
-                        "name":  "sports-tracker"
-                    },
-                    {
-                        "path":  "../personal/tax-dash",
-                        "name":  "tax-dash"
-                    },
-                    {
-                        "path":  "../personal/whatbox-media-stack",
-                        "name":  "whatbox-media-stack"
-                    },
-                    {
-                        "path":  "../personal/willdo",
-                        "name":  "willdo"
-                    }
-                ],
-    "settings":  {
-                     "peacock.color":  "#6C3FA4",
-                     "workbench.colorCustomizations":  {
-                                                           "activityBar.background":  "#6C3FA4",
-                                                           "activityBar.foreground":  "#e7e7e7",
-                                                           "activityBar.inactiveForeground":  "#e7e7e799",
-                                                           "activityBarBadge.background":  "#e7e7e7",
-                                                           "activityBarBadge.foreground":  "#6C3FA4",
-                                                           "statusBar.background":  "#6C3FA4",
-                                                           "statusBar.foreground":  "#e7e7e7",
-                                                           "titleBar.activeBackground":  "#6C3FA4",
-                                                           "titleBar.activeForeground":  "#e7e7e7",
-                                                           "titleBar.inactiveBackground":  "#6C3FA499",
-                                                           "titleBar.inactiveForeground":  "#e7e7e799"
-                                                       },
-                     "window.title":  "PERSONAL: ${activeEditorShort}",
-                     "files.watcherExclude":  {
-                                                  "**/node_modules/**":  true,
-                                                  "**/venv/**":  true,
-                                                  "**/.venv/**":  true,
-                                                  "**/dist/**":  true,
-                                                  "**/data/**":  true,
-                                                  "**/.git/**":  true
-                                              }
-                 }
+{
+  "folders": [
+    {
+      "path": "/root/decommission/DubbLearning",
+      "name": "DubbLearning"
+    },
+    {
+      "path": "/root/personal/field-season",
+      "name": "field-season"
+    },
+    {
+      "path": "/root/personal/hearth",
+      "name": "hearth"
+    },
+    {
+      "path": "/root/decommission/justin-jobs",
+      "name": "justin-jobs"
+    },
+    {
+      "path": "/root/personal/meeting-notes",
+      "name": "meeting-notes"
+    },
+    {
+      "path": "/root/personal/prep107",
+      "name": "prep107"
+    },
+    {
+      "path": "/root/personal/shadows-of-asirad",
+      "name": "shadows-of-asirad"
+    },
+    {
+      "path": "/root/personal/whatbox-media-stack",
+      "name": "whatbox-media-stack"
+    },
+    {
+      "path": "/root/personal/willdo",
+      "name": "willdo"
+    }
+  ],
+  "settings": {
+    "peacock.color": "#6C3FA4",
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#8557bf",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#ca9a75",
+      "activityBarBadge.foreground": "#15202b",
+      "statusBar.background": "#6c3fa4",
+      "statusBar.foreground": "#e7e7e7",
+      "titleBar.activeBackground": "#6c3fa4",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#6c3fa499",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "activityBar.activeBackground": "#8557bf",
+      "activityBarTop.activeBackground": "#8557bf",
+      "activityBarTop.background": "#8557bf",
+      "activityBarTop.foreground": "#e7e7e7",
+      "activityBarTop.inactiveForeground": "#e7e7e799",
+      "commandCenter.border": "#e7e7e799",
+      "commandCenter.foreground": "#e7e7e7",
+      "sash.hoverBorder": "#8557bf",
+      "statusBar.debuggingBackground": "#6c3fa4",
+      "statusBar.debuggingForeground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#8557bf",
+      "statusBarItem.remoteBackground": "#b87947",
+      "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "window.title": "PERSONAL: ${activeEditorShort}",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/venv/**": true,
+      "**/.venv/**": true,
+      "**/dist/**": true,
+      "**/data/**": true,
+      "**/.git/**": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "\ud83d\udd10 Stash a secret",
+        "detail": "Open the secret inbox to paste a key/login. Claude files it to Bitwarden.",
+        "type": "shell",
+        "command": "stash",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "never",
+          "panel": "shared",
+          "close": true
+        }
+      }
+    ]
+  }
 }

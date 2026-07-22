@@ -1,46 +1,65 @@
 {
-    "folders":  [
-                    {
-                        "path":  "../mark",
-                        "name":  "mark (isolated)"
-                    }
-                ],
-    "settings":  {
-                     "peacock.color":  "#C25100",
-                     "workbench.colorCustomizations":  {
-                        "activityBar.background": "#f56600",
-                        "activityBar.foreground": "#15202b",
-                        "activityBar.inactiveForeground": "#15202b99",
-                        "activityBarBadge.background": "#00ff6a",
-                        "activityBarBadge.foreground": "#15202b",
-                        "statusBar.background": "#c25100",
-                        "statusBar.foreground": "#e7e7e7",
-                        "titleBar.activeBackground": "#c25100",
-                        "titleBar.activeForeground": "#e7e7e7",
-                        "titleBar.inactiveBackground": "#c2510099",
-                        "titleBar.inactiveForeground": "#e7e7e799",
-                        "activityBar.activeBackground": "#f56600",
-                        "activityBarTop.activeBackground": "#f56600",
-                        "activityBarTop.background": "#f56600",
-                        "activityBarTop.foreground": "#15202b",
-                        "activityBarTop.inactiveForeground": "#15202b99",
-                        "commandCenter.border": "#e7e7e799",
-                        "commandCenter.foreground": "#e7e7e7",
-                        "sash.hoverBorder": "#f56600",
-                        "statusBar.debuggingBackground": "#c25100",
-                        "statusBar.debuggingForeground": "#e7e7e7",
-                        "statusBarItem.hoverBackground": "#f56600",
-                        "statusBarItem.remoteBackground": "#00401b",
-                        "statusBarItem.remoteForeground": "#e7e7e7"
-                    },
-                     "window.title":  "MARK: ${activeEditorShort}",
-                     "files.watcherExclude":  {
-                                                  "**/node_modules/**":  true,
-                                                  "**/venv/**":  true,
-                                                  "**/.venv/**":  true,
-                                                  "**/dist/**":  true,
-                                                  "**/data/**":  true,
-                                                  "**/.git/**":  true
-                                              }
-                 }
+  "folders": [
+    {
+      "path": "/root/mark",
+      "name": "mark (isolated)"
+    }
+  ],
+  "settings": {
+    "peacock.color": "#C25100",
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#f56600",
+      "activityBar.foreground": "#15202b",
+      "activityBar.inactiveForeground": "#15202b99",
+      "activityBarBadge.background": "#00ff6a",
+      "activityBarBadge.foreground": "#15202b",
+      "statusBar.background": "#c25100",
+      "statusBar.foreground": "#e7e7e7",
+      "titleBar.activeBackground": "#c25100",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#c2510099",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "activityBar.activeBackground": "#f56600",
+      "activityBarTop.activeBackground": "#f56600",
+      "activityBarTop.background": "#f56600",
+      "activityBarTop.foreground": "#15202b",
+      "activityBarTop.inactiveForeground": "#15202b99",
+      "commandCenter.border": "#e7e7e799",
+      "commandCenter.foreground": "#e7e7e7",
+      "sash.hoverBorder": "#f56600",
+      "statusBar.debuggingBackground": "#c25100",
+      "statusBar.debuggingForeground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#f56600",
+      "statusBarItem.remoteBackground": "#00401b",
+      "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "window.title": "MARK: ${activeEditorShort}",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/venv/**": true,
+      "**/.venv/**": true,
+      "**/dist/**": true,
+      "**/data/**": true,
+      "**/.git/**": true
+    },
+    "git.repositoryScanMaxDepth": 3,
+    "git.autoRepositoryDetection": true
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "\ud83d\udd10 Stash a secret",
+        "detail": "Open the secret inbox to paste a key/login. Claude files it to Bitwarden.",
+        "type": "shell",
+        "command": "stash",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "never",
+          "panel": "shared",
+          "close": true
+        }
+      }
+    ]
+  }
 }

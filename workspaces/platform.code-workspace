@@ -1,137 +1,167 @@
-﻿{
-    "folders":  [
-                    {
-                        "path":  "../platform/agent-infra",
-                        "name":  "agent-infra"
-                    },
-                    {
-                        "path":  "../platform/claude-kit",
-                        "name":  "claude-kit"
-                    },
-                    {
-                        "path":  "../platform/guarddog",
-                        "name":  "guarddog"
-                    },
-                    {
-                        "path":  "../platform/meridian",
-                        "name":  "meridian"
-                    },
-                    {
-                        "path":  "../platform/meridian-mcp",
-                        "name":  "meridian-mcp"
-                    },
-                    {
-                        "path":  "../platform/openpx",
-                        "name":  "openpx"
-                    },
-                    {
-                        "path":  "../platform/Professor",
-                        "name":  "Professor"
-                    },
-                    {
-                        "path":  "../platform/proteus",
-                        "name":  "proteus"
-                    },
-                    {
-                        "path":  "../platform/prowler",
-                        "name":  "prowler"
-                    },
-                    {
-                        "path":  "../platform/refinery",
-                        "name":  "refinery"
-                    },
-                    {
-                        "path":  "../platform/reservoir",
-                        "name":  "reservoir"
-                    },
-                    {
-                        "path":  "../platform/sam",
-                        "name":  "sam"
-                    },
-                    {
-                        "path":  "../platform/tinyauth-sso",
-                        "name":  "tinyauth-sso"
-                    },
-                    {
-                        "path":  "../platform/wsg-agents",
-                        "name":  "wsg-agents"
-                    },
-                    {
-                        "path":  "../platform/wsg-cc-sam",
-                        "name":  "wsg-cc-sam"
-                    },
-                    {
-                        "path":  "../platform/wsg-client-template",
-                        "name":  "wsg-client-template"
-                    },
-                    {
-                        "path":  "../platform/wsg-com-site",
-                        "name":  "wsg-com-site"
-                    },
-                    {
-                        "path":  "../platform/wsg-consent",
-                        "name":  "wsg-consent"
-                    },
-                    {
-                        "path":  "../platform/wsg-infra-audit",
-                        "name":  "wsg-infra-audit"
-                    },
-                    {
-                        "path":  "../platform/wsg-lite",
-                        "name":  "wsg-lite"
-                    },
-                    {
-                        "path":  "../platform/wsg-mattermost",
-                        "name":  "wsg-mattermost"
-                    },
-                    {
-                        "path":  "../platform/wsg-meridian",
-                        "name":  "wsg-meridian"
-                    },
-                    {
-                        "path":  "../platform/wsg-platform",
-                        "name":  "wsg-platform"
-                    },
-                    {
-                        "path":  "../platform/wsg-sentinel",
-                        "name":  "wsg-sentinel"
-                    },
-                    {
-                        "path":  "../platform/wsg-seo",
-                        "name":  "wsg-seo"
-                    },
-                    {
-                        "path":  "../platform/wsg-sp-plugin",
-                        "name":  "wsg-sp-plugin"
-                    },
-                    {
-                        "path":  "../platform/wsg-tool-radar",
-                        "name":  "wsg-tool-radar"
-                    }
-                ],
-    "settings":  {
-                     "peacock.color":  "#1857A4",
-                     "workbench.colorCustomizations":  {
-                                                           "activityBar.background":  "#1857A4",
-                                                           "activityBar.foreground":  "#e7e7e7",
-                                                           "activityBar.inactiveForeground":  "#e7e7e799",
-                                                           "activityBarBadge.background":  "#e7e7e7",
-                                                           "activityBarBadge.foreground":  "#1857A4",
-                                                           "statusBar.background":  "#1857A4",
-                                                           "statusBar.foreground":  "#e7e7e7",
-                                                           "titleBar.activeBackground":  "#1857A4",
-                                                           "titleBar.activeForeground":  "#e7e7e7",
-                                                           "titleBar.inactiveBackground":  "#1857A499",
-                                                           "titleBar.inactiveForeground":  "#e7e7e799"
-                                                       },
-                     "window.title":  "PLATFORM: ${activeEditorShort}",
-                     "files.watcherExclude":  {
-                                                  "**/node_modules/**":  true,
-                                                  "**/venv/**":  true,
-                                                  "**/.venv/**":  true,
-                                                  "**/dist/**":  true,
-                                                  "**/data/**":  true,
-                                                  "**/.git/**":  true
-                                              }
-                 }
+{
+  "folders": [
+    {
+      "path": "/root/platform/agent-infra",
+      "name": "agent-infra"
+    },
+    {
+      "path": "/root/platform/claude-kit",
+      "name": "claude-kit"
+    },
+    {
+      "path": "/root/platform/guarddog",
+      "name": "guarddog"
+    },
+    {
+      "path": "/root/platform/meridian",
+      "name": "meridian"
+    },
+    {
+      "path": "/root/platform/meridian-mcp",
+      "name": "meridian-mcp"
+    },
+    {
+      "path": "/root/platform/openpx",
+      "name": "openpx"
+    },
+    {
+      "path": "/root/platform/Professor",
+      "name": "Professor"
+    },
+    {
+      "path": "/root/platform/proteus",
+      "name": "proteus"
+    },
+    {
+      "path": "/root/platform/prowler",
+      "name": "prowler"
+    },
+    {
+      "path": "/root/platform/refinery",
+      "name": "refinery"
+    },
+    {
+      "path": "/root/platform/reservoir",
+      "name": "reservoir"
+    },
+    {
+      "path": "/root/platform/sam",
+      "name": "sam"
+    },
+    {
+      "path": "/root/platform/tinyauth-sso",
+      "name": "tinyauth-sso"
+    },
+    {
+      "path": "/root/platform/wsg-agents",
+      "name": "wsg-agents"
+    },
+    {
+      "path": "/root/platform/wsg-cc-sam",
+      "name": "wsg-cc-sam"
+    },
+    {
+      "path": "/root/platform/wsg-client-template",
+      "name": "wsg-client-template"
+    },
+    {
+      "path": "/root/platform/wsg-com-site",
+      "name": "wsg-com-site"
+    },
+    {
+      "path": "/root/platform/wsg-consent",
+      "name": "wsg-consent"
+    },
+    {
+      "path": "/root/platform/wsg-infra-audit",
+      "name": "wsg-infra-audit"
+    },
+    {
+      "path": "/root/platform/wsg-lite",
+      "name": "wsg-lite"
+    },
+    {
+      "path": "/root/platform/wsg-mattermost",
+      "name": "wsg-mattermost"
+    },
+    {
+      "path": "/root/platform/wsg-meridian",
+      "name": "wsg-meridian"
+    },
+    {
+      "path": "/root/platform/wsg-platform",
+      "name": "wsg-platform"
+    },
+    {
+      "path": "/root/platform/wsg-sentinel",
+      "name": "wsg-sentinel"
+    },
+    {
+      "path": "/root/platform/wsg-seo",
+      "name": "wsg-seo"
+    },
+    {
+      "path": "/root/platform/wsg-sp-plugin",
+      "name": "wsg-sp-plugin"
+    },
+    {
+      "path": "/root/platform/wsg-tool-radar",
+      "name": "wsg-tool-radar"
+    }
+  ],
+  "settings": {
+    "peacock.color": "#1857A4",
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#1f6fd0",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#ee90bb",
+      "activityBarBadge.foreground": "#15202b",
+      "statusBar.background": "#1857a4",
+      "statusBar.foreground": "#e7e7e7",
+      "titleBar.activeBackground": "#1857a4",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#1857a499",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "activityBar.activeBackground": "#1f6fd0",
+      "activityBarTop.activeBackground": "#1f6fd0",
+      "activityBarTop.background": "#1f6fd0",
+      "activityBarTop.foreground": "#e7e7e7",
+      "activityBarTop.inactiveForeground": "#e7e7e799",
+      "commandCenter.border": "#e7e7e799",
+      "commandCenter.foreground": "#e7e7e7",
+      "sash.hoverBorder": "#1f6fd0",
+      "statusBar.debuggingBackground": "#1857a4",
+      "statusBar.debuggingForeground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#1f6fd0",
+      "statusBarItem.remoteBackground": "#530c2c",
+      "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "window.title": "PLATFORM: ${activeEditorShort}",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/venv/**": true,
+      "**/.venv/**": true,
+      "**/dist/**": true,
+      "**/data/**": true,
+      "**/.git/**": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "\ud83d\udd10 Stash a secret",
+        "detail": "Open the secret inbox to paste a key/login. Claude files it to Bitwarden.",
+        "type": "shell",
+        "command": "stash",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "never",
+          "panel": "shared",
+          "close": true
+        }
+      }
+    ]
+  }
 }

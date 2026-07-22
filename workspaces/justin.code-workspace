@@ -1,49 +1,79 @@
-﻿{
-    "folders":  [
-                    {
-                        "path":  "../platform",
-                        "name":  "platform"
-                    },
-                    {
-                        "path":  "../ventures",
-                        "name":  "ventures"
-                    },
-                    {
-                        "path":  "../personal",
-                        "name":  "personal"
-                    },
-                    {
-                        "path":  "../clients",
-                        "name":  "clients"
-                    },
-                    {
-                        "path":  "../unsorted",
-                        "name":  "unsorted"
-                    }
-                ],
-    "settings":  {
-                     "peacock.color":  "#1857A4",
-                     "workbench.colorCustomizations":  {
-                                                           "activityBar.background":  "#1857A4",
-                                                           "activityBar.foreground":  "#e7e7e7",
-                                                           "activityBar.inactiveForeground":  "#e7e7e799",
-                                                           "activityBarBadge.background":  "#e7e7e7",
-                                                           "activityBarBadge.foreground":  "#1857A4",
-                                                           "statusBar.background":  "#1857A4",
-                                                           "statusBar.foreground":  "#e7e7e7",
-                                                           "titleBar.activeBackground":  "#1857A4",
-                                                           "titleBar.activeForeground":  "#e7e7e7",
-                                                           "titleBar.inactiveBackground":  "#1857A499",
-                                                           "titleBar.inactiveForeground":  "#e7e7e799"
-                                                       },
-                     "window.title":  "JUSTIN: ${activeEditorShort}",
-                     "files.watcherExclude":  {
-                                                  "**/node_modules/**":  true,
-                                                  "**/venv/**":  true,
-                                                  "**/.venv/**":  true,
-                                                  "**/dist/**":  true,
-                                                  "**/data/**":  true,
-                                                  "**/.git/**":  true
-                                              }
-                 }
+{
+  "folders": [
+    {
+      "path": "/root/platform",
+      "name": "platform"
+    },
+    {
+      "path": "/root/ventures",
+      "name": "ventures"
+    },
+    {
+      "path": "/root/personal",
+      "name": "personal"
+    },
+    {
+      "path": "/root/clients",
+      "name": "clients"
+    },
+    {
+      "path": "/root/unsorted",
+      "name": "unsorted"
+    }
+  ],
+  "settings": {
+    "peacock.color": "#1857A4",
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#1f6fd0",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#ee90bb",
+      "activityBarBadge.foreground": "#15202b",
+      "statusBar.background": "#1857a4",
+      "statusBar.foreground": "#e7e7e7",
+      "titleBar.activeBackground": "#1857a4",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#1857a499",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "activityBar.activeBackground": "#1f6fd0",
+      "activityBarTop.activeBackground": "#1f6fd0",
+      "activityBarTop.background": "#1f6fd0",
+      "activityBarTop.foreground": "#e7e7e7",
+      "activityBarTop.inactiveForeground": "#e7e7e799",
+      "commandCenter.border": "#e7e7e799",
+      "commandCenter.foreground": "#e7e7e7",
+      "sash.hoverBorder": "#1f6fd0",
+      "statusBar.debuggingBackground": "#1857a4",
+      "statusBar.debuggingForeground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#1f6fd0",
+      "statusBarItem.remoteBackground": "#530c2c",
+      "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "window.title": "JUSTIN: ${activeEditorShort}",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/venv/**": true,
+      "**/.venv/**": true,
+      "**/dist/**": true,
+      "**/data/**": true,
+      "**/.git/**": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "\ud83d\udd10 Stash a secret",
+        "detail": "Open the secret inbox to paste a key/login. Claude files it to Bitwarden.",
+        "type": "shell",
+        "command": "stash",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "never",
+          "panel": "shared",
+          "close": true
+        }
+      }
+    ]
+  }
 }

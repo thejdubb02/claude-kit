@@ -1,33 +1,63 @@
-﻿{
-    "folders":  [
-                    {
-                        "path":  "../clients/wsg-client-projects",
-                        "name":  "wsg-client-projects"
-                    }
-                ],
-    "settings":  {
-                     "peacock.color":  "#0F6E6E",
-                     "workbench.colorCustomizations":  {
-                                                           "activityBar.background":  "#0F6E6E",
-                                                           "activityBar.foreground":  "#e7e7e7",
-                                                           "activityBar.inactiveForeground":  "#e7e7e799",
-                                                           "activityBarBadge.background":  "#e7e7e7",
-                                                           "activityBarBadge.foreground":  "#0F6E6E",
-                                                           "statusBar.background":  "#0F6E6E",
-                                                           "statusBar.foreground":  "#e7e7e7",
-                                                           "titleBar.activeBackground":  "#0F6E6E",
-                                                           "titleBar.activeForeground":  "#e7e7e7",
-                                                           "titleBar.inactiveBackground":  "#0F6E6E99",
-                                                           "titleBar.inactiveForeground":  "#e7e7e799"
-                                                       },
-                     "window.title":  "CLIENTS: ${activeEditorShort}",
-                     "files.watcherExclude":  {
-                                                  "**/node_modules/**":  true,
-                                                  "**/venv/**":  true,
-                                                  "**/.venv/**":  true,
-                                                  "**/dist/**":  true,
-                                                  "**/data/**":  true,
-                                                  "**/.git/**":  true
-                                              }
-                 }
+{
+  "folders": [
+    {
+      "path": "/root/clients/wsg-client-projects",
+      "name": "wsg-client-projects"
+    }
+  ],
+  "settings": {
+    "peacock.color": "#0F6E6E",
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#159b9b",
+      "activityBar.foreground": "#e7e7e7",
+      "activityBar.inactiveForeground": "#e7e7e799",
+      "activityBarBadge.background": "#f7c7f7",
+      "activityBarBadge.foreground": "#15202b",
+      "statusBar.background": "#0f6e6e",
+      "statusBar.foreground": "#e7e7e7",
+      "titleBar.activeBackground": "#0f6e6e",
+      "titleBar.activeForeground": "#e7e7e7",
+      "titleBar.inactiveBackground": "#0f6e6e99",
+      "titleBar.inactiveForeground": "#e7e7e799",
+      "activityBar.activeBackground": "#159b9b",
+      "activityBarTop.activeBackground": "#159b9b",
+      "activityBarTop.background": "#159b9b",
+      "activityBarTop.foreground": "#e7e7e7",
+      "activityBarTop.inactiveForeground": "#e7e7e799",
+      "commandCenter.border": "#e7e7e799",
+      "commandCenter.foreground": "#e7e7e7",
+      "sash.hoverBorder": "#159b9b",
+      "statusBar.debuggingBackground": "#0f6e6e",
+      "statusBar.debuggingForeground": "#e7e7e7",
+      "statusBarItem.hoverBackground": "#159b9b",
+      "statusBarItem.remoteBackground": "#e857e8",
+      "statusBarItem.remoteForeground": "#e7e7e7"
+    },
+    "window.title": "CLIENTS: ${activeEditorShort}",
+    "files.watcherExclude": {
+      "**/node_modules/**": true,
+      "**/venv/**": true,
+      "**/.venv/**": true,
+      "**/dist/**": true,
+      "**/data/**": true,
+      "**/.git/**": true
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "\ud83d\udd10 Stash a secret",
+        "detail": "Open the secret inbox to paste a key/login. Claude files it to Bitwarden.",
+        "type": "shell",
+        "command": "stash",
+        "problemMatcher": [],
+        "presentation": {
+          "reveal": "never",
+          "panel": "shared",
+          "close": true
+        }
+      }
+    ]
+  }
 }

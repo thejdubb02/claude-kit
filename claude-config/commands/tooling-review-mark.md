@@ -26,7 +26,7 @@ This is client work. It stays fully isolated from Justin's own projects.
 
 **Hard boundaries for this session:**
 
-- Nothing built here deploys to Justin's VPSes (`vps1`–`vps4`, `racknerd`). Ever.
+- Nothing built here deploys to Justin's VPSes (`vps1`–`vps4`). Ever.
 - Nothing here gets committed to `thejdubb02`.
 - Nothing here writes to **status.willhitestrategy.org**.
 - Do not use Justin's Vaultwarden entries, even where they would work.

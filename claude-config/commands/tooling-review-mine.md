@@ -17,7 +17,7 @@ PHASE 0: SCOPE GATE
 
 | | |
 |---|---|
-| Servers | `vps1` 187.77.19.181 · `vps2` 187.124.65.189 · `vps3` 2.24.210.249 · `vps4`/`sentinel` 2.25.81.55 · `racknerd` 155.94.171.48 |
+| Servers | `vps1` 187.77.19.181 · `vps2` 187.124.65.189 · `vps3` 2.24.210.249 · `vps4`/`sentinel` 2.25.81.55 |
 | Kuma | **https://status.willhitestrategy.org** — Uptime Kuma on **vps1**, behind Tinyauth SSO (`login.willhitestrategy.org`) |
 | GitHub | `thejdubb02` |
 | Code | `/root/platform` · `/root/ventures` · `/root/personal` · `/root/clients` · `/root/decommission` |
@@ -87,7 +87,7 @@ Where to look, at minimum:
 - CLI scripts — `<repo>/tools/*.py` and `<repo>/scripts/*.sh`
 - MCP — `/root/platform/mcp-gateway`, plus `agent-infra/tools/mcp_health.py`
 - Scheduled jobs — `systemctl list-timers --all` and `crontab -l` on the devbox
-  **and each of vps1/vps2/vps3/vps4/racknerd**; plus GitHub Actions in `thejdubb02`
+  **and each of vps1/vps2/vps3/vps4**; plus GitHub Actions in `thejdubb02`
 - Monitors — the Kuma DB query above, joined against
   `agent-infra/llm-registry.yaml` via `agent-infra/tools/llm_map.py check`
 

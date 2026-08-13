@@ -84,7 +84,6 @@ unless noted) as you need them on the new machine. This is your checklist:
 - WSG EXIF Remover login (justin)
 - Uptime Kuma login (wsg-admin)
 - NocoDB signin
-- RackNerd IPTV admin login
 - Trading-bot admin login (justin) + viewer login (Matt)
 - Keila newsletter admin login
 - OpnForm admin login
